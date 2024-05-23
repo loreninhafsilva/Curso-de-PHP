@@ -10,8 +10,7 @@
         $login = $_POST["login"];
         $senha = $_POST["senha"];
 
-        if ( (trim($login) != "") && (trim($senha) != "") ) {
-
+        if ( (trim($login) != "") && (trim($senha) != "") ) { //o trim() remove os espaços em branco do que foi digitado
             if ( ($login == "professor") && ($senha == "1234") ) {
                 $pagina = "professor.html";
 
