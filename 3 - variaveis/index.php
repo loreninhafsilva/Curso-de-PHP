@@ -38,6 +38,24 @@ echo gettype(new Person) . '<br>';
 //null
 $null;
 
-echo gettype($null);
+//echo gettype($null);
+
+//isset - verificar se uma variável, ou o elemento de um array, foi definido (setado), com a função isset( )
+
+$nota1 = 10;
+$nota2;
+
+if ( isset($nota1) && isset($nota2) ) {
+    $media = ($nota1 + $nota2)/2;
+    echo "Média = " . $media;
+    echo '<br>';
+} else {
+    echo "Informe as duas notas!";
+}
+
+define("PI", 3.14);
+
+$media = 4.5 * PI;
+echo "Média = " . $media;
 
 ?>
